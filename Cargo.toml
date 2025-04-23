@@ -1,0 +1,13 @@
+[package]
+name = "rs-fzf"
+version = "0.1.0"
+edition = "2024" # Consider using "2021" if "2024" causes issues before stabilization
+
+[dependencies]
+eframe = "0.27.2" # For the egui framework application runner
+egui = "0.27.2"  # The egui library itself
+serde = { version = "1.0", features = ["derive"] } # For serializing/deserializing data (like rg --json output)
+serde_json = "1.0" # For JSON parsing
+crossbeam-channel = "0.5" # For sending results from background thread to GUI thread
+directories = "5.0" # For finding user directories (e.g., home)
+rfd = "0.15.3"
