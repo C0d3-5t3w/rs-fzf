@@ -12,7 +12,7 @@ fn main() -> Result<(), eframe::Error> {
     };
 
     eframe::run_native(
-        "Ripgrep GUI",
+        "fzf",
         options,
         Box::new(|_cc| Box::<MyApp>::default()),
     )
